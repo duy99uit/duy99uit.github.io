@@ -462,44 +462,44 @@ section.active{
 .home-section .min-vh-100{
     padding: 120px 15px;
 }
-.home-content{
+.home-section .home-content{
     max-width: 620px;
     width: 100%;
     margin: auto;
     text-align: center;
 }
-.home-content img{
+.home-section .home-content img{
     max-width: 150px;
     border: 5px solid var(--dark-light);
     border-radius: 50%;
     margin: 0 0 15px;
 }
-.home-content h1{
+.home-section .home-content h1{
     font-size: 28px;
     margin: 0 0 8px;
 
 }
-.home-content p span{
+.home-section .home-content p span{
     font-size: 600;
     text-transform: capitalize;
 
 }
-.home-content .fe-label{
+.home-section .home-content .fe-label{
     color: var(--main-color);
     text-transform: capitalize;
     font-weight: 600;
     position: relative;
 }
-.home-content p{
+.home-section .home-content p{
     /* font-size: 18px; */
 }
-.home-content p .link-item{
+.home-section .home-content p .link-item{
     color: var(--main-color);
     text-transform: capitalize;
     font-weight: 600;
     position: relative;
 }
-.home-content p .link-item::before{
+.home-section .home-content p .link-item::before{
     content: '';
     position: absolute;
     left: 0;
@@ -509,20 +509,20 @@ section.active{
     background-color: var(--main-color);
     transition: all 0.3s ease;
 }
-.home-content p .link-item:hover:before{
+.home-section .home-content p .link-item:hover:before{
     width: 100%;
 }
-.home-content h2{
+.home-section .home-content h2{
     margin: 20px 0 5px;
     text-transform: capitalize;
     font-size: 20px;
 }
-.home-content .skills{
+.home-section .home-content .skills{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.home-content .skill-item{
+.home-section.home-content .skill-item{
     background-color: var(--dark-light);
     margin: 4px 2px 0;
     padding: 2px 10px;
