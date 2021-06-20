@@ -116,3 +116,139 @@
         border-width: 10px;
     }
 }
+
+
+
+.about-section{
+    background-color: var(--dark);
+}
+.about-text,
+.about-img{
+    width: 50%;
+    padding: 0 15px;
+}
+.about-text h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+.about-text p{
+    margin: 0 0 15px;
+}
+.about-text .btn{
+    margin: 15px 0 0;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 10px;
+    height: 320px;
+}
+.about-img .img-box{
+    position: relative;
+}
+.about-img .img-box::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border:  3px solid var(--main-color);
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    animation: spin01 10s linear infinite;
+}
+
+
+@keyframes spin01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.timeline-section{
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #eaa023;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}

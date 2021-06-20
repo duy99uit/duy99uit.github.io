@@ -181,7 +181,7 @@ document.addEventListener("click", (e)=>{
     }
 })
 function activeSection(sectionId){
-    document.querySelector("section.active").classList.remove("active");
-    document.querySelector(sectionId).classList.add("active");
-    window.scrollTo(0,0)
+    // document.querySelector("section.active").classList.remove("active");
+    // document.querySelector(sectionId).classList.add("active");
+    // window.scrollTo(0,0)
 }

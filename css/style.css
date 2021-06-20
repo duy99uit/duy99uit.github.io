@@ -128,7 +128,8 @@ button{
     font-weight: inherit;
 }
 section{
-    display: none;
+    /* display: none; */
+    display: block;
 }
 section.active{
     display: block;
@@ -335,6 +336,10 @@ section.active{
     z-index: 102;
     margin-right: 15px;
     transition: all 0.3s ease 0.4s;
+    position: fixed;
+    right: 0;
+    top: 20px;
+    z-index: 1000;
 }
 .header .nav-toggle.toggle-hide{
     transform: scale(0);
@@ -490,9 +495,6 @@ section.active{
     font-weight: 600;
     position: relative;
 }
-.home-section .home-content p{
-    /* font-size: 18px; */
-}
 .home-section .home-content p .link-item{
     color: var(--main-color);
     text-transform: capitalize;
@@ -549,6 +551,114 @@ section.active{
 }
 .home-section .home-content .skill-item:hover{
     transform: scale(1.1)
+}
+
+/* skill here */
+
+.skill-section{
+    background-color: var(--dark-800);
+    padding-bottom: 50px;
+}
+.skill-section .skill-item{
+    width: calc((100% / 4) - 30px);
+    margin: 0 15px 30px;
+    padding: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.skill-section .skill-item::before,
+.skill-section .skill-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2F353E;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.skill-section .skill-item:hover::before{
+    transform: scale(1,0);
+}
+.skill-section .skill-item:hover::after{
+    transform: scale(0,1);
+}
+.skill-section .skill-item:nth-child(1){
+    background-color: var(--js-color);
+}
+.skill-section .skill-item:nth-child(2){
+    background-color: var(--ts-color);
+}
+.skill-section .skill-item:nth-child(3){
+    background-color: var(--go-color);
+}
+.skill-section .skill-item .icon{
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 10px;
+    transition: all 0.5s ease;
+}
+.skill-section .skill-item:hover .icon{
+    color: var(--white-900);
+}
+.skill-section .skill-item h3{
+    color: var(--white-900);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+
+
+.about-section{
+    background-color: var(--dark);
+}
+.about-text,
+.about-img{
+    width: 50%;
+    padding: 0 15px;
+}
+.about-text h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+.about-text p{
+    margin: 0 0 15px;
+}
+.about-text .btn{
+    margin: 15px 0 0;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 10px;
+    height: 320px;
+}
+.about-img .img-box{
+    position: relative;
+}
+.about-img .img-box::before{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border:  3px solid var(--main-color);
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    animation: spin01 10s linear infinite;
+}
+
+
+@keyframes spin01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -974,6 +1084,9 @@ section.active{
     .portfolio-item{
         width: calc(50% - 30px);
     }
+    .skill-section .skill-item{
+        width: calc((100%)/3 - 30px);
+    }
 }
 @media (max-width: 767px){
     .bg-animation-effect .col-7,
@@ -985,6 +1098,9 @@ section.active{
     }
     .portfolio-item{
         width: calc(100% - 30px);
+    }
+    .skill-section .skill-item{
+        width: calc(50% - 30px);
     }
     
 }
@@ -998,5 +1114,8 @@ section.active{
     .contact-info-item .social-links span{
         display: block;
         margin-bottom: 10px;
+    }
+    .skill-section .skill-item{
+        width: calc(100% - 30px);
     }
 }
