@@ -27,7 +27,11 @@ filterBtnContainer.addEventListener("click", (e)=>{
         filterBtnContainer.querySelector(".active").classList.remove("active");
         e.target.classList.add("active");
         document.querySelector(".filter-status").classList.add("active");
-        document.querySelector(".filter-status p").innerHTML =`filtering <span>${e.target.innerHTML}</span> work`
+        document.querySelector(".filter-status div").innerHTML =`<div class="loader loader-7">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>`
         // toggleBodyScrolling();
         setTimeout(()=>{
             filterItems(e.target);
