@@ -38,7 +38,7 @@ filterBtnContainer.addEventListener("click", (e)=>{
         },250)
         setTimeout(()=>{
             document.querySelector(".filter-status").classList.remove("active");
-        },500)
+        },450)
     }
 })
 function filterItems(filterBtn){
