@@ -532,24 +532,26 @@ section.active{
     transform: scale(0.95);
     transition: all 0.5s;
 }
-.home-section .skill-item.html{
+.home-section .home-content .skill-item.html{
     background-color: var(--html-color);
 }
-.home-section .skill-item.css{
+.home-section .home-content .skill-item.css{
     background-color: var(--css-color)
 }
-.home-section .skill-item.js{
+.home-section .home-content .skill-item.js{
     background-color: var(--js-color)
 }
-.home-section .skill-item.ts{
+.home-section .home-content .skill-item.ts{
     background-color: var(--ts-color);
 }
-.home-section .skill-item.go{
+.home-section .home-content .skill-item.go{
     background-color: var(--go-color);
 }
-.home-content .skill-item:hover{
+.home-section .home-content .skill-item:hover{
     transform: scale(1.1)
 }
+
+
 .portfolio-section{
     padding-bottom: 70px;
 }
