@@ -567,6 +567,7 @@ section.active{
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background: linear-gradient(to right, #59BA56 0%, #30CFD0 100%);
 }
 .skill-section .skill-item::before,
 .skill-section .skill-item::after{
@@ -586,7 +587,7 @@ section.active{
 .skill-section .skill-item:hover::after{
     transform: scale(0,1);
 }
-.skill-section .skill-item:nth-child(1){
+/* .skill-section .skill-item:nth-child(1){
     background-color: var(--js-color);
 }
 .skill-section .skill-item:nth-child(2){
@@ -594,11 +595,11 @@ section.active{
 }
 .skill-section .skill-item:nth-child(3){
     background-color: var(--go-color);
-}
+} */
 .skill-section .skill-item .icon{
     font-size: 30px;
     color: var(--main-color);
-    margin: 0 0 10px;
+    margin: 0 0 5px;
     transition: all 0.5s ease;
 }
 .skill-section .skill-item:hover .icon{
@@ -609,7 +610,7 @@ section.active{
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
-    margin: 0 0 10px;
+    margin: 0 0 5px;
 }
 
 
@@ -1096,11 +1097,24 @@ section.active{
     .bg-animation-effect div{
         margin-left: calc((100% - 20px) / 6);
     }
+    .about-section .about-text,
+    .about-section  .about-img{
+        width: calc(100% - 30px);
+    }
+    .about-section  .about-img{
+        padding-top: 30px;
+    }
     .portfolio-item{
         width: calc(100% - 30px);
     }
     .skill-section .skill-item{
         width: calc(50% - 30px);
+    }
+    .footer-item{
+        width: 100%;
+    }
+    .footer-item:not(:last-child){
+        margin-bottom: 30px;
     }
     
 }
