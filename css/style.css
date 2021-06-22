@@ -596,7 +596,7 @@ section.active {
 .skill-section .skill-item {
   width: calc((100% / 4) - 30px);
   margin: 0 15px 30px;
-  padding: 30px;
+  padding: 15px;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -695,8 +695,10 @@ section.active {
   max-width: 50%;
 }
 .about-text .about-info .about-info-item .fas{
-  color: var(--main-color);
-  margin-right: 5px;
+  margin-right: 10px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #59ba56 0%, #30cfd0 100%);
 }
 .about-text .about-info .about-info-item span{
   font-weight: 500;
@@ -1185,6 +1187,11 @@ section.active {
     padding: 25px 15px;
     font-size: 16px;
     border-top: 1px solid var(--white-light);
+  }
+  .footer .copyright .dribbble{
+    text-decoration: none;
+    color: #EB6196;
+    padding: 0 2px 0 0;
   }
 @media (max-width: 991px) {
   .bg-animation-effect .col-10,

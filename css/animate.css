@@ -158,7 +158,7 @@
 .timeline-dot {
   height: 16px;
   width: 16px;
-  background-color: #eaa023;
+  background: linear-gradient(to right, #59ba56 0%, #30cfd0 100%);
   position: absolute;
   left: calc(50% - 8px);
   border-radius: 50%;
@@ -166,7 +166,9 @@
 }
 .timeline-date {
   font-size: 18px;
-  color: #eaa023;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #59ba56 0%, #30cfd0 100%);
   margin: 6px 0 15px;
 }
 .timeline-content {
