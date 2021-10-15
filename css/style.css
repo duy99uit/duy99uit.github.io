@@ -1145,6 +1145,13 @@ section.active {
   font-size: 24px;
   font-weight: 600;
 }
+.contact-info-item p .email{
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contact-info-item p .email:hover{
+  color: var(--main-color);
+}
 .contact-info-item .social-links span {
   margin-right: 4px;
 }
