@@ -917,9 +917,13 @@ section.active {
 }
 .portfolio-item-thumbnail::before {
   top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .portfolio-item-thumbnail::after {
   bottom: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .portfolio-item:hover .portfolio-item-thumbnail::before,
 .portfolio-item:hover .portfolio-item-thumbnail::after {
@@ -941,6 +945,9 @@ section.active {
 }
 .portfolio-item img {
   width: 100%;
+  aspect-ratio: 1.779;
+  object-fit: contain;
+  border-radius: 5px;
 }
 .portfolio-item h3 {
   font-size: 20px;
