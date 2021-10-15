@@ -766,9 +766,10 @@ section.active {
   content: "";
   position: absolute;
   width: 2px;
-  height: 100%;
+  height: calc(100% - 16px);
   background-color: #2f363e;
   left: 7px;
+  top: 16px;
 }
 .timeline-item {
   margin-bottom: 40px;
