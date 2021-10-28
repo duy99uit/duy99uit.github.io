@@ -10,10 +10,10 @@
   );
 
   --go-color: #2563eb;
-  --ts-color: #3178C7;
+  --ts-color: #3178c7;
   --react-color: #5ed3f3;
-  --js-color: #DD9C29;
-  --react-native-color: #5ED3F3;
+  --js-color: #dd9c29;
+  --react-native-color: #5ed3f3;
   --react-color: #dd4b2b;
   --react-bg: #000000;
   --dark: #1b1b22;
@@ -756,12 +756,11 @@ section.active {
 .about-text .about-interest .about-interest-item i {
   margin-right: 5px;
 }
-.about-text.work{
+.about-text.work {
   width: calc(50% - 30px);
   margin: 0 15px 30px;
 }
 .about-section .timeline-items {
-  
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -1152,11 +1151,11 @@ section.active {
   font-size: 24px;
   font-weight: 600;
 }
-.contact-info-item p .email{
+.contact-info-item p .email {
   transition: all 0.3s;
   cursor: pointer;
 }
-.contact-info-item p .email:hover{
+.contact-info-item p .email:hover {
   color: var(--main-color);
 }
 .contact-info-item .social-links span {
