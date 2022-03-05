@@ -823,7 +823,7 @@ section.active {
   height: 2px;
   left: 0;
   content: "";
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 .timeline-content:hover::before {
   width: 100%;
