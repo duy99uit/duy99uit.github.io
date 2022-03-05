@@ -1169,11 +1169,15 @@ section.active {
 .pp-body .description {
   margin: 0 0 30px;
 }
+.pp-body .description a {
+  color: var(--main-color);
+}
 .pp-body .general-info p {
   margin-bottom: 10px;
   font-weight: 600;
 }
-.pp-body .general-info p span {
+.pp-body .general-info p span,
+.pp-body .general-info p.feature {
   font-weight: 300;
   margin-left: 5px;
 }
