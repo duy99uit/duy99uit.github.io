@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
+  --dark-main: #000000;
   --main-color: #59ba56;
   --bg-gradient-green-blue: linear-gradient(to right, #59ba56 0%, #30cfd0 100%);
   --bg-gradient-green-blue-hv: linear-gradient(
@@ -932,6 +933,47 @@ section.active {
 }
 .portfolio-item-thumbnail {
   position: relative;
+}
+.portfolio-item-thumbnail-ribbon {
+  display: inline-block;
+  padding: 8px 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 40px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0;
+  text-shadow: none;
+  font-weight: normal;
+  background-color: var(--dark-main) !important;
+  border-top-right-radius: 5px;
+  z-index: 0;
+}
+.portfolio-item-thumbnail-ribbon i {
+  font-size: 24px;
+}
+.portfolio-item-thumbnail-ribbon i.fab.fa-android {
+  color: #59ba56;
+  margin-right: 5px;
+}
+
+.portfolio-item-thumbnail-ribbon-two:before,
+.portfolio-item-thumbnail-ribbon-two:before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  border: 9px solid transparent;
+  border-width: 20px 8px;
+  border-right-color: var(--dark-main);
+}
+.portfolio-item-thumbnail-ribbon-two:before {
+  border-color: var(--dark-main);
+  border-left-color: transparent !important;
+  left: -9px;
 }
 .portfolio-item-thumbnail::before,
 .portfolio-item-thumbnail::after {
