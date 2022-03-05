@@ -1160,6 +1160,9 @@ section.active {
 .pp-thumbnail {
   padding: 20px 0;
 }
+.pp-thumbnail img {
+  border-radius: 5px;
+}
 .pp-body {
   padding: 15px 0;
 }
@@ -1195,6 +1198,7 @@ section.active {
 }
 .pp-footer img {
   max-width: 120px;
+  border-radius: 3px;
 }
 .contact-section.active {
   display: flex;
