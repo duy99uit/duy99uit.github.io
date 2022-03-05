@@ -57,7 +57,7 @@ body {
   width: 100%;
   background-color: var(--dark-light);
   color: var(--white-light);
-  z-index: 999;
+  z-index: 1001;
   display: flex;
   justify-content: center;
   align-items: center;
