@@ -9,7 +9,15 @@
     #59ba56 0%,
     #59ba56 100%
   );
-  
+
+  /* --main-color: #28ACEA;
+  --bg-gradient-green-blue: linear-gradient(to right, #28ACEA 0%, #09EBEE 100%);
+  --bg-gradient-green-blue-hv: linear-gradient(
+    to right,
+    #28ACEA 0%,
+    #28ACEA 100%
+  ); */
+
   --go-color: #2563eb;
   --ts-color: #3178c7;
   --react-color: #5ed3f3;
