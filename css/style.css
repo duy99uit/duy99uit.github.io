@@ -825,6 +825,10 @@ section.active {
   text-transform: capitalize;
   font-weight: 500;
 }
+.timeline-content h3 .link-item {
+  color: var(--main-color);
+  text-transform: capitalize;
+}
 .timeline-content p {
   color: #c8c8c8;
   font-size: 16px;
