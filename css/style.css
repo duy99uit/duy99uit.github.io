@@ -697,16 +697,6 @@ section.active {
 .about-img .img-box {
   position: relative;
 }
-.about-img .img-box::before {
-  content: "";
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  border: 3px solid var(--main-color);
-  left: calc(50% - 50px);
-  top: calc(50% - 50px);
-  animation: spin01 10s linear infinite;
-}
 .about-text .about-info,
 .about-text .about-link {
   margin: 15px 0;
