@@ -832,8 +832,12 @@ section.active {
 .timeline-content p {
   color: #c8c8c8;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 22px;
+}
+.timeline-content p.detail {
+  margin-left: 10px;
+  font-weight: 300;
 }
 .timeline-items::before {
   left: 7px;
