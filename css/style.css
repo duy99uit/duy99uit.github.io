@@ -956,6 +956,22 @@ section.active {
   color: #59ba56;
   margin-right: 5px;
 }
+.mernstack-label span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.mernstack-label span:nth-child(1) {
+  color: #1a4802;
+}
+.mernstack-label span:nth-child(2) {
+  color: #fff;
+}
+.mernstack-label span:nth-child(3) {
+  color: #54dbfa;
+}
+.mernstack-label span:nth-child(4) {
+  color: #6aac47;
+}
 
 .portfolio-item-thumbnail-ribbon-two:before,
 .portfolio-item-thumbnail-ribbon-two:before {
