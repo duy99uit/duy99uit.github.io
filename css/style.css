@@ -537,11 +537,16 @@ section.active {
   width: 100%;
   margin: auto;
   text-align: center;
+  transition: 0.1s ease;
 }
 .home-section .home-content img {
   max-width: 150px;
   border: 5px solid var(--dark-light);
   border-radius: 50%;
+
+  /* border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, var(--main-color), #30cfd0) border-box; */
   margin: 0 0 15px;
 }
 .home-section .home-content h1 {
