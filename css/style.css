@@ -989,11 +989,6 @@ section.active {
   background-repeat: no-repeat;
   background-image: url("../img//tag/nextjs-tag.png");
 }
-/* .ribbon-tag {
-  width: 27px;
-  height: 27px;
-  object-fit: contain;
-} */
 
 .portfolio-item-thumbnail-ribbon-two:before,
 .portfolio-item-thumbnail-ribbon-two:before {
