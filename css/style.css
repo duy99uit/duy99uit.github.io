@@ -2,12 +2,19 @@
 
 :root {
   --dark-main: #000000;
-  --main-color: #59ba56;
-  --bg-gradient-green-blue: linear-gradient(to right, #59ba56 0%, #30cfd0 100%);
-  --bg-gradient-green-blue-hv: linear-gradient(
+  /* --main-color: #59ba56; */
+  /* --bg-gradient-green-blue: linear-gradient(to right, #59ba56 0%, #30cfd0 100%); */
+  /* --bg-gradient-green-blue-hv: linear-gradient(
     to right,
     #59ba56 0%,
     #59ba56 100%
+  ); */
+  --main-color: #38b9fc;
+  --bg-gradient-green-blue: linear-gradient(to right, #38b9fc 0%, #6ae9b9 100%);
+  --bg-gradient-green-blue-hv: linear-gradient(
+    to right,
+    #38b9fc 0%,
+    #38b9fc 100%
   );
 
   /* --main-color: #28ACEA;
@@ -28,7 +35,8 @@
   --dark: #1b1b22;
   --dark-light: #32323a;
   --white: #ffffff;
-  --white-light: #c8c8c8;
+  /* --white-light: #c8c8c8; */
+  --white-light: #ffffff;
 }
 * {
   margin: 0;
